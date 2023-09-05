@@ -7,19 +7,43 @@ let offset = 0;
 
 function convertPokemonToLi(pokemon) {
     return `
-       <li class="pokemon ${pokemon.type}">
-            <span class="number">#${pokemon.number}</span>
-            <span class="name">${pokemon.name}</span>
+    <input type="checkbox" id="switch" />
 
-            <div class="detail">
-                <ol class="types">
-                    ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
-                </ol>
-
-                <img src="${pokemon.photo}"
-                     alt="${pokemon.name}">
-            </div>
-        </li>
+    <label class="flip-container" for="switch" >
+      <div class="flipper">
+        <div class="front">
+          <li class="pokemon ${pokemon.type}">
+                <span class="number">#${pokemon.number}</span>
+                <span class="name">${pokemon.name}</span>
+    
+                <div class="detail">
+                    <ol class="types">
+                        ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
+                    </ol>
+    
+                    <img src="${pokemon.photo}"
+                         alt="${pokemon.name}">
+                </div>
+            </li>
+        </div>
+        <div class="back">
+                <li class="pokemon ${pokemon.type}">
+                <span class="number">#${pokemon.number}</span>
+                <span class="name">${pokemon.name}</span>
+    
+                <div class="detail">
+                    <ol class="types">
+                        ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
+                    </ol>
+    
+                    <img src="${pokemon.photo}"
+                         alt="${pokemon.name}">
+                </div>
+            </li>
+        </div>
+      </div>
+    </label>
+    
     `
 }
 
