@@ -18,7 +18,10 @@ function convertPokemonToLi(pokemon) {
 
                 <img src="${pokemon.photo}"
                      alt="${pokemon.name}">
+                     
             </div>
+            <span> Peso ${pokemon.weight}</span>
+
         </li>
     `
 }
