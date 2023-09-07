@@ -56,3 +56,7 @@
 #base-stats {
     transition: color 0.5s ease-in-out;
 }
+.stats-n{
+    display: flex;
+    flex-direction: column;
+}

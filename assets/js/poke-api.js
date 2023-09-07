@@ -20,6 +20,8 @@ function convertPokeApiDetailToPokemon(pokeDetail) {
     pokemon.stats = stats
     pokemon.stat = stat
 
+    
+
     return pokemon
 }
 
