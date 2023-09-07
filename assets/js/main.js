@@ -2,7 +2,7 @@ const pokemonList = document.getElementById('pokemonList')
 const loadMoreButton = document.getElementById('loadMoreButton')
 
 const maxRecords = 151
-const limit = 1;
+const limit = 3;
 let offset = 0;
 
 function convertPokemonToLi(pokemon) {
@@ -19,7 +19,69 @@ function convertPokemonToLi(pokemon) {
                 <img src="${pokemon.photo}"
                      alt="${pokemon.name}">
             </div>
+        
             <h6> Basic Stats</h6>
+            <div class="background2"> 
+            <div id="stats">
+            <div class="stat-row">
+                <div class="stat-desc">HP</div>
+                <div class="stat-number">045</div>
+                <div class="stat-bar">
+                    <div class="bar-outer">
+                        <div class="bar-inner" style="width: 45%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="stat-row">
+                <div class="stat-desc">ATK</div>
+                <div class="stat-number">049</div>
+                <div class="stat-bar">
+                    <div class="bar-outer">
+                        <div class="bar-inner" style="width: 49%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="stat-row">
+                <div class="stat-desc">DEF</div>
+                <div class="stat-number">049</div>
+                <div class="stat-bar">
+                    <div class="bar-outer">
+                        <div class="bar-inner" style="width: 49%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="stat-row">
+                <div class="stat-desc">SATK</div>
+                <div class="stat-number">065</div>
+                <div class="stat-bar">
+                    <div class="bar-outer">
+                        <div class="bar-inner" style="width: 65%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="stat-row">
+                <div class="stat-desc">SDEF</div>
+                <div class="stat-number">065</div>
+                <div class="stat-bar">
+                    <div class="bar-outer">
+                        <div class="bar-inner" style="width: 65%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="stat-row">
+                <div class="stat-desc">SPD</div>
+                <div class="stat-number">045</div>
+                <div class="stat-bar">
+                    <div class="bar-outer">
+                        <div class="bar-inner" style="width: 45%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+             </div>
+                   </div>
+           
+                            </div>
         </li>
     `
 }
