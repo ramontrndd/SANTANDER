@@ -1,10 +1,10 @@
 #stats {
-    width: 97%;
-    font-size: 0.8rem;
-    gap: 0.6rem;
-    margin-top: 30px;
+    width: 90%;
+    font-size: -0.2rem;
+    gap: 0.2rem;
+    margin-top: 26px;
+    margin-left: 6px;
 }
-
 .stat-row {
     display: flex;
 }
@@ -14,16 +14,21 @@
 }
 
 .stat-desc {
-    color:  rgb(116, 203, 72);
+    color: rgb(116, 203, 72);
     font-weight: bold;
     text-align: right;
-    margin-right: 0.6rem;
+    margin-right: 0.1rem;
     transition: color 0.5s ease-in-out;
+    font-size: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .stat-number {
-    border-left: 1px solid gray;
+    border-left: 1px solid #000000e6;
     text-align: right;
+    font-size: 0.9rem;
 }
 
 .stat-bar {
